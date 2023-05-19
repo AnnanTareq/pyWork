@@ -1,0 +1,12 @@
+Round Number : 1
+User points = 2
+Computers points = 2
+
+Round Number : 2
+User points = 0
+Computers points = 0
+
+Round Number : 3
+User points = 1
+Computers points = 2
+
