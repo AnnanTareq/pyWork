@@ -80,6 +80,7 @@ class file_operation_delete(file_operation):
                 os.rmdir(Path)  # No need to handle error here, because while this block is executing, that time this should be empty
                 # shutil.rmtree(Path, ignore_errors=True)
 
+
 while True:
     question = input('What you want to do?\n 1. add \n 2. delete \n 3. exit \n')
     if question == '1' or question.lower() == 'add':
