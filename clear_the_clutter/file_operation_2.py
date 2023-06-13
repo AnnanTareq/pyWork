@@ -85,14 +85,10 @@ class file_operation_delete(file_operation):
     def rename_files(self, new_name, old_file_type):
         Path = os.path.join(self.location, self.sub_location)
         files_lst = os.listdir(Path)
-        # file_type = input('What type of files do you want to make order? ')
-        # desired_file_lst = list()
-        # self.types = file_type
 
         i = 0
         for item in files_lst:
             if old_file_type in item:
-                # desired_file_lst.append(item)
                 os.rename(f'{Path}/{item}', f'{Path}/{new_name}{i}.{old_file_type}')
                 i += 1
         print('Done!!!')
